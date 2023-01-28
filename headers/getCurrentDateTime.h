@@ -2,11 +2,11 @@
 #include <iostream>
 using namespace std;
 
-string str(int number){
+string str(int number){ // fixes time format f. e. (1:4:2) => (01: 04: 02)
     return (number > 9 ? "" : "0") + to_string(number);
 }
 
-string getCurrentTime() {
+string getCurrentTime() { // function that returns current time
     time_t currentTime;
     struct tm *localTime;
 
@@ -20,7 +20,7 @@ string getCurrentTime() {
     return str(Hour) + ":" + str(Min) + ":" + str(Sec);
 }
 
-string getCurrentDate() {
+string getCurrentDate() { // function that returns current date
     time_t currentTime;
     struct tm *localTime;
 

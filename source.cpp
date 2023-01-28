@@ -21,15 +21,15 @@ int main() {
 
     cout << "\n\tWelcome to new ATM" << endl;
 
-    while (running){
+    while (running){ // while programm is running perform this loop
         string choice;
         cout << mainOptions << endl;
-        while (!isNumber(choice) || !(stoi(choice) > 0 && stoi(choice) < 5) ){
+        while (!isNumber(choice) || !(stoi(choice) > 0 && stoi(choice) < 5) ){ // loop until input is valid
             cout << "Enter number of option you want to implement: (1 - 4)" << endl;
             cin >> choice;
         }
 
-        switch (stoi(choice)){
+        switch (stoi(choice)){ // user input's handling switch
             case 1:
                 depositMoney();
                 break;
@@ -45,12 +45,12 @@ int main() {
         }
 
         string answer;
-        while (answer != "yes" && answer != "no") {
+        while (answer != "yes" && answer != "no") { // loop until input is valid
             cout << "Do you want to make one more operation? (yes / no)" << endl;
             cin >> answer;
         }
         if (answer == "no") {
-            running = false;
+            running = false; // exit programm if user input is "no" 
         }
     }
     cout << "Thank's for using this ATM machine!\nHave a nice day!" << endl;
