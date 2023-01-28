@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 extern int cardBalance;
 extern int AtmBalance;
  
@@ -16,6 +18,6 @@ void depositMoney(){
     else {
         AtmBalance += stoi(depositAmount);
         cardBalance -= stoi(depositAmount);
-        cout << "Successfully deposited " << stoi(depositAmount) << " euros" << endl;
+        makeOperation("Successfully deposited " + depositAmount + " euros");
     }
 }

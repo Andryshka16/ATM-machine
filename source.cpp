@@ -1,5 +1,6 @@
 #include <iostream>
-#include "isNumber.h"
+#include "headers/isNumber.h"
+#include "headers/makeOperation.h"
 
 #include "mainTools/depositMoney.h"
 #include "mainTools/withdrawMoney.h"

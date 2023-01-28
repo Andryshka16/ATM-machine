@@ -1,7 +1,8 @@
 #include <iostream>
+using namespace std;
 
 extern int cardBalance;
 
 void checkBalance(){
-    cout << "There have " << cardBalance << " euros on your card" << endl;
+    cout << "You have " << cardBalance << " euros on your card" << endl;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 extern int AtmBalance;
 
@@ -9,5 +10,5 @@ void increaseAtmBalance(){
         cin >> amount;
     }
     AtmBalance += stoi(amount);
-    cout << "Added "<< amount << " euros to ATM machine" << endl;
+    makeOperation("Added " + amount + " euros to ATM machine");
 }

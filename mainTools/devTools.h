@@ -1,4 +1,6 @@
 #include <iostream>
+using namespace std;
+
 #include "../devTools/increaseAtmBalance.h"
 #include "../devTools/decreaseAtmBalance.h"
 #include "../devTools/checkAtmBalance.h"
