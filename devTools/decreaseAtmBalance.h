@@ -10,5 +10,5 @@ void decreaseAtmBalance(){
         cin >> amount;
     }
     AtmBalance -= stoi(amount); // calculate new ATM balance
-    makeOperation("Took " + amount + " euros from ATM machine"); // call makeOperation function
+    makeOperation("Took " + amount + " € from ATM machine"); // call makeOperation function
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isNumber(string s){ // fcuntion to check if string can be convertable to number
+bool isNumber(string s){ // function to check if string can be convertable to number
     if (!s.length()){
         return false;
     }

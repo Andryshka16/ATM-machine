@@ -17,6 +17,6 @@ void depositMoney(){
     else {
         AtmBalance += stoi(depositAmount);
         cardBalance -= stoi(depositAmount);
-        makeOperation("Successfully deposited " + depositAmount + " euros"); // call makeOperation function
+        makeOperation("Successfully deposited " + depositAmount + " €"); // call makeOperation function
     }
 }

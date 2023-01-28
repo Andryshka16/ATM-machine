@@ -18,6 +18,6 @@ void withdrawMoney(){
     else {
         AtmBalance -= stoi(withdrawAmount); // calculating new ATM balance
         cardBalance += stoi(withdrawAmount); // calculating new card balance
-        makeOperation("Successfully widrawn " + withdrawAmount + " euros"); // call makeOperation function
+        makeOperation("Successfully widrawn " + withdrawAmount + " €"); // call makeOperation function
     }
 }
