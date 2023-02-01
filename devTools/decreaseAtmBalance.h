@@ -5,10 +5,17 @@ extern int AtmBalance;
 
 void decreaseAtmBalance(){
     string amount;
+
     while (!isNumber(amount) || (!stoi(amount) > 0) ){ // loop until input is valid
         cout << "Enter amount of money you want to take from ATM: (amount > 0)" << endl;
         cin >> amount;
     }
-    AtmBalance -= stoi(amount); // calculate new ATM balance
-    makeOperation("Took " + amount + " € from ATM machine"); // call makeOperation function
+    if (stoi(amount) > AtmBalance ) { // check if ATM has enough money
+        cout << "ATM does not have enough money!" << endl;
+    }
+    else {
+        AtmBalance -= stoi(amount); // calculate new ATM balance
+        makeOperation("Added " + amount + " € to ATM machine"); // call makeOperation function
+    }
+
 }

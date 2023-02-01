@@ -31,18 +31,10 @@ void devTools(){
         }
 
         switch (stoi(choice)){ // switch which determines what to do based on user input
-            case 1:
-                increaseAtmBalance();
-                break;
-            case 2:
-                decreaseAtmBalance();
-                break;
-            case 3:
-                checkAtmBalance();
-                break;
-            case 4:
-                clearAtmHistory();
-                break;
+            case 1: increaseAtmBalance(); break;
+            case 2: decreaseAtmBalance(); break;
+            case 3: checkAtmBalance(); break;
+            case 4: clearAtmHistory(); break;
         }
     }
     else {

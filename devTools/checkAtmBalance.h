@@ -4,5 +4,5 @@ using namespace std;
 extern int AtmBalance;
 
 void checkAtmBalance(){
-    cout << "ATM machine has "<< AtmBalance << " euros" << endl;
+    printf("ATM machine has %d euros\n", AtmBalance);
 }
