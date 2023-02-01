@@ -1,13 +1,13 @@
 #include <iostream>
-#include <windows.h>
 
-#include "headers/isNumber.h"
+#include "headers/isInRange.h"
 #include "headers/makeOperation.h"
 
 #include "mainTools/depositMoney.h"
 #include "mainTools/withdrawMoney.h"
 #include "mainTools/checkBalance.h"
 #include "mainTools/devTools.h"
+
 
 using namespace std;
 
@@ -41,7 +41,8 @@ int main() {
         while (app.running) { // while programm is running perform this loop
             string choice;
             cout << app.mainOptions << endl;
-            while (!isNumber(choice) || !(stoi(choice) > 0 && stoi(choice) < 5)){ // loop until input is valid
+            
+            while (!isInRange(choice, 0, 5)){ // loop until input is valid
                 cout << "Enter a number of option you want to implement: (1 - 4)" << endl;
                 cin >> choice;
             }

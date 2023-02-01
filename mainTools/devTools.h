@@ -17,15 +17,17 @@ void devTools(){
     int tries = 0;
 
     while (userPassword != password && tries < 3 ) { // loop until input is valid and tries count is < 3
-        cout << "Enter password to join devMod: (" << 3 - tries << " tries left)" << endl;
+        printf("Enter password to join devMod: (%d tries left)\n", 3 - tries);
         cin >> userPassword;
+        if (userPassword != password) MessageBox("Wrong password!", "ERROR");
+        
         tries += 1;
     }
 
     if (userPassword == password && tries < 4) { // if user wrote password in less than 4 tries offer him devOptions
         string choice;
         cout << devOptions << endl;
-        while (!isNumber(choice) || !(stoi(choice) > 0 && stoi(choice) < 5) ){ // loop until password is correct
+        while (!isInRange(choice, 0, 5)){ // loop until password is correct
             cout << "Enter number of option you want to implement: (1 - 4)" << endl;
             cin >> choice;
         }

@@ -1,0 +1,3 @@
+Successfully deposited 2 €   • 01/02/2023 18:53:40
+Added 3 € to ATM machine   • 01/02/2023 18:54:22
+Took 100005 € from ATM machine   • 01/02/2023 18:54:34
