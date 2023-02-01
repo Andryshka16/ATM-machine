@@ -21,7 +21,7 @@ class Atm {
         }
         void disableAtm(){
             running = false;
-            cout << "Thank's for using this ATM machine! << endl" << endl;
+            cout << "Thank's for using this ATM machine!" << endl;
             cout << "Have a nice day!" << endl;
         }
 };
@@ -36,7 +36,7 @@ int AtmBalance = 100000;
 
 int main() {
         Atm app;
-        cout << "\n\tWelcome to ATM machine" << endl;
+        app.greeting();
 
         while (app.running) { // while programm is running perform this loop
             string choice;
